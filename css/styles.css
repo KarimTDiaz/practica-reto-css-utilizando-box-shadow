@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+}
+
+.shape {
+  background-color: orange;
+  width: 100px;
+  height: 100px;
+  box-shadow: 300px 0 orange, 150px 150px purple;
+}
+
+.shape::before {
+  content: '';
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50px;
+  left: 160px;
+  background-color: blueviolet;
+  box-shadow: 150px 150px aqua, -150px 150px aqua;
+}
